@@ -1,0 +1,10 @@
+{{#if currentUser}}
+  <h1>Profile of {{currentUser.username}}</h1>
+
+{{else}}
+
+  <h1>Disconnected :[ try to login again or signup </h1>
+
+{{/if}}
+
+<a href="/profile">Reload</a>
