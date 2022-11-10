@@ -77,7 +77,7 @@ router.post("/login", async (req, res, next) => {
       });
     }
 
-    req.session.currentUser = foundUser;
+    req.session.currentUser = foundUser; // we can named it user too
     console.log("redirectprofile connected to user");
     res.redirect("/profile"); //redirect to profile page
   } catch (error) {

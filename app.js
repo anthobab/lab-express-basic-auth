@@ -27,6 +27,8 @@ require("./config")(app);
 app.use(
   session({
     secret: process.env.SESSION_SECRET,
+    saveUninitialized: false,
+    resave: false,
     cookie: {
       maxAge: 1000 * 60 * 60, // in ms so 1h then disconnect
     },
